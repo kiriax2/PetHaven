@@ -1,0 +1,113 @@
+.adopt-form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adopt-form-container h1 {
+  text-align: center;
+  color: #e67e22;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e67e22;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+.success {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+  .adopt-form-container {
+    padding: 20px;
+  }
+}
+/* 🐾 Pet Preview Card */
+.adopt-pet-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #fffaf3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.adopt-pet-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #e67e22;
+}
+
+.adopt-pet-details {
+  flex: 1;
+}
+
+.adopt-pet-details h2 {
+  color: #e67e22;
+  margin-bottom: 8px;
+}
+
+.adopt-pet-details p {
+  margin: 3px 0;
+  font-size: 1rem;
+  color: #444;
+}
+

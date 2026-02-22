@@ -1,0 +1,85 @@
+.adoption-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.pet-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pet-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pet-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.pet-info h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.available {
+  color: green;
+}
+
+.unavailable {
+  color: gray;
+}
+
+.adopt-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.adopt-btn:hover {
+  background-color: #0056b3;
+}
+
+.adopt-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
